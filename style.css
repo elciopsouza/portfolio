@@ -1,0 +1,224 @@
+/* Este repositório base foi criado para te ajudar caso você não saiba como começar. Lembre-se de que o portfólio é a sua carta de apresentação e você deve dar a sua cara. Por isso, convidamos você a personalizá-lo de acordo com o seu estilo e preferências; não se limite apenas ao layout proposto no Figma. */
+:root {
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-fundo-2: #EBF2FD;
+    --cor-de-fundo-menu: #ffffff;
+    --cor-do-link: #00000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway', sans-serif;
+    min-height: 100vh;
+    width: 360px;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-do-link);
+}
+
+/* ------------------------------ Seção Menu -------------------------------*/
+.cabecalho {
+    display: flex;
+    height: 56px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--cor-de-fundo-menu);
+}
+
+.cabecalho__logo {
+    max-width: 20px; /* Ajuste para telas pequenas */
+}
+
+.cabecalho__titulo {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.navegacao__lista {
+    display: block;
+}
+
+.navegacao__elemento {
+    display: none;
+}
+
+.navegacao__elemento a {
+    font-size: 0.7rem;
+}
+
+.navegacao__contato {
+    display: block;
+}
+/* ------------------------------ Seção Apresentação ------------------------------*/
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+/* .apresentacao__container {
+    display: flex;
+} */
+
+.apresentacao__foto {
+    border-radius: 100%;
+    height: 98px;
+    width: 98px;
+    margin: auto;
+}
+
+.apresentacao__titulo {
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+
+.apresentacao__subtitulo {
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.redes__elemento {
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.redes__seta {
+    filter: brightness(0);
+    height: 0.666rem;
+    width: 0.666rem;
+}
+
+/* ------------------------------ Seção Sobre mim ----------------------------------*/
+.sobre-mim {
+    padding: 1rem;
+    background-color: var(--cor-de-fundo-2);
+}
+
+.sobre-mim__titulo {
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+
+.sobre-mim__texto {
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-top: 1rem;
+
+}
+.sobre-mim__assinatura {
+    width: 100px;
+    filter: brightness(0);
+    padding-top: 1rem;
+}
+
+
+/*------------------------------ Seção de Habilidades ------------------------------*/
+.habilidades {
+    padding: 1rem;
+}
+
+.habilidades__titulo {
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+
+.habilidades__lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 4 7.375rem ; */
+    gap: 1rem;
+}
+
+.habilidades__elemento {
+    width: 9.75rem;
+    height: 7.375rem;
+    background-color: var(--cor-de-fundo-menu);
+}
+
+.habilidades__icone {
+    height: 2.3125rem;
+    width: 2.3125rem;
+
+}
+
+/*------------------------------ Seção de Hobbies --------------------------------*/
+.hobbies__icone {
+    filter: invert(36%) sepia(95%) saturate(2042%) hue-rotate(210deg) brightness(95%) contrast(85%);
+}
+
+
+/*------------------------------ Seção de Projetos --------------------------------*/
+
+
+/*------------------------------ Seção de Contato ---------------------------------*/
+
+
+/* ------------------------------ Responsividade ---------------------------------------*/
+
+/* Tablets e telas maiores */
+@media (min-width: 768px) {
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho__logo {
+        max-width: 100px;
+    }
+
+    .cabecalho__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacao__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1rem;
+    }
+}
+
+/* Telas grandes */
+@media (min-width: 1024px) {
+    /* Aqui você pode ajustar ainda mais o design para telas grandes */
+    .cabecalho__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1.1rem;
+    }
+}
